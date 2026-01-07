@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imam Mahedi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Profile -->
+<img src="images/profile.jpg" alt="Profile Image" class="profile-image">
+<h1>Imam Mahedi</h1>
+<p class="profession">Web Designer</p>
+
+<!-- Social Buttons -->
+<div class="social-buttons">
+    <a href="https://www.facebook.com/share/167B3eDy98/" target="_blank"><button class="facebook">Facebook</button></a>
+    <a href="https://wa.me/8801729360079" target="_blank"><button class="whatsapp">WhatsApp</button></a>
+    <a href="https://www.instagram.com/imam_mahedi143?igsh=MTZ6azV1eHVnejRoZw==" target="_blank"><button class="instagram">Instagram</button></a>
+    <a href="https://www.linkedin.com/in/md-imam-mahedi-8a89a3235" target="_blank"><button class="linkedin">LinkedIn</button></a>
+</div>
+
+<!-- About Me -->
+<div class="section">
+<h2>About Me</h2>
+<p>Hello! I am Imam Mahedi, a passionate Web Designer. I create modern, responsive, and user-friendly websites that look great on any device.</p>
+</div>
+
+<!-- Skills -->
+<div class="section">
+<h2>My Skills</h2>
+<div class="skills">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Web Design</div>
+<div class="skill">UI/UX</div>
+</div>
+</div>
+
+<!-- Contact Form -->
+<div class="section">
+<h2>Contact Me</h2>
+<form onsubmit="submitForm(); return false;">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="email" id="email" placeholder="Your Email" required>
+<textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+<button type="submit" class="submit-btn">Send Message</button>
+</form>
+</div>
+
+<script>
+function submitForm() {
+var name = document.getElementById("name").value;
+var email = document.getElementById("email").value;
+var message = document.getElementById("message").value;
+alert("Thank you, " + name + "!\nYour message has been received.\nEmail: " + email + "\nMessage: " + message);
+document.getElementById("name").value = "";
+document.getElementById("email").value = "";
+document.getElementById("message").value = "";
+}
+</script>
+
+</body>
+</html>

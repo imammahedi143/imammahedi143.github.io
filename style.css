@@ -1,0 +1,35 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Arial', sans-serif; background-color: #d0e7ff; text-align: center; line-height: 1.6; }
+a { text-decoration: none; }
+
+.profile-image { width: 150px; height: 150px; border-radius: 50%; margin: 30px auto 10px auto; border: 4px solid #0a3d62; animation: fadeIn 2s ease; }
+h1, h2 { color: #0a3d62; }
+p.profession { font-size: 18px; font-weight: bold; margin-bottom: 20px; }
+p { color: #1e272e; font-size: 16px; }
+
+.social-buttons { margin-bottom: 40px; }
+.social-buttons a button {
+padding: 10px 20px; margin: 5px; border: none; border-radius: 50px; color: white; cursor: pointer; transition: transform 0.3s, opacity 0.3s;
+}
+.social-buttons a button:hover { transform: scale(1.1); opacity: 0.85; }
+.facebook { background-color: #3b5998; }
+.whatsapp { background-color: #25D366; }
+.instagram { background-color: #C13584; }
+.linkedin { background-color: #0077b5; }
+
+.section { background-color: #f0f8ff; margin: 20px auto; padding: 30px 20px; border-radius: 10px; width: 90%; max-width: 800px; animation: fadeInUp 1s ease; }
+.skills { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 15px; }
+.skill { background-color: #0a3d62; color: white; padding: 8px 15px; border-radius: 20px; font-size: 14px; transition: transform 0.3s; }
+.skill:hover { transform: scale(1.1); }
+
+form input, form textarea, form button.submit-btn { width: 90%; padding: 12px; margin: 10px 0; font-size: 16px; border-radius: 5px; border: 1px solid #ccc; }
+form button.submit-btn { background-color: green; color: white; border: none; cursor: pointer; transition: 0.3s; }
+form button.submit-btn:hover { opacity: 0.85; transform: scale(1.05); }
+
+@keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+@keyframes fadeInUp { from {opacity:0; transform:translateY(30px);} to {opacity:1; transform:translateY(0);} }
+
+@media (max-width: 600px) {
+.skills { flex-direction: column; }
+.social-buttons a button { width: 80%; margin: 5px auto; }
+}
